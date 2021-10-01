@@ -9,6 +9,7 @@ class Log {
   static final Logger _logger = Logger('bonsai');
   static const initMesg = '==== Bonsai logging started ====';
 
+  /// initialise the logging output
   static void init([bool? useStd]) {
     if (true == useStd) {
       stdout.writeln(initMesg);
@@ -30,17 +31,21 @@ class Log {
     });
   }
 
+  /// debug level message
   static void d(String tag, String mesg) => _logger.fine('[$tag] $mesg');
 
+  /// info level message
   static void i(String tag, String mesg) => _logger.info('[$tag] $mesg');
 
+  /// warning level message
   static void w(String tag, String mesg, {Object? data}) => _logger.warning('[$tag] $mesg');
 
+  /// error level message
   static void e(String mesg, [Object? error, StackTrace? stackTrace]) => _logger.severe(mesg, error, stackTrace);
 }
 
 extension BonsaiLogExt on Object {
-  // nice helper ext method makes this available to every object, chooses a default level of 'debug'
-  // and gets the calling object type without needing to do expensive operation to get stacktrace
+  /// a nice helper ext method makes this available to every object, chooses a default level of 'debug'
+  /// and gets the calling object type without needing to do expensive operation to get stacktrace
   void log(String mesg) => Log.d(runtimeType.toString(), mesg);
 }

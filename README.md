@@ -57,6 +57,18 @@ In Flutter apps, the logging will be sent to usual app console output. However i
  Log.init(true);
 ```
 
+Example stdout/stderr commandline output looks like:
+
+```
+FINE: 2021-10-01 16:29:54.573106: [MyClass] hello I'm doing something
+FINE: 2021-10-01 16:29:54.576928: [Main] custom tags are also available
+SEVERE: 2021-10-01 16:29:54.577526: some error happened
+FormatException: something went very wrong
+#0      main (file:///home/maks/work/bonsai_dart/example/bonsai_example.dart:16:5)
+#1      _delayEntrypointInvocation.<anonymous closure> (dart:isolate-patch/isolate_patch.dart:297:19)
+#2      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:192:12)
+```
+
 ## The name?
 
 Following in the great heritage of naming Logging packages in Android: logging, trees, tiny logging package... :-)

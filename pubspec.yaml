@@ -1,6 +1,6 @@
 name: bonsai
-description: A tiny Dart logging package.
-version: 1.0.0
+description: A tiny Dart logging package using dart:developer logging, API inspired by Android logging.
+version: 1.0.0+1
 homepage: https://github.com/maks/bonsai_dart
 
 environment:
