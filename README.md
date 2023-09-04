@@ -1,4 +1,4 @@
-# Bonsai
+# Bonsai 盆栽
 
 ## Features
 
@@ -69,7 +69,7 @@ FormatException: something went very wrong
 #2      _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:192:12)
 ```
 
-## The name?
+## The name? 
 
 Following in the great heritage of naming Logging packages in Android: logging, trees, tiny logging package... :-)
 

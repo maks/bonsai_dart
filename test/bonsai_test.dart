@@ -1,16 +1,14 @@
-import 'package:bonsai/bonsai.dart';
 import 'package:test/test.dart';
 
 void main() {
-  group('A group of tests', () {
-    final awesome = Awesome();
+  group('Test logging', () {
+    // TODO
+    // setUp(() {
+    //   //
+    // });
 
-    setUp(() {
-      // Additional setup goes here.
-    });
-
-    test('First Test', () {
-      expect(awesome.isAwesome, isTrue);
-    });
+    // test('First Test', () {
+    //   expect(false, isTrue);
+    // });
   });
 }
