@@ -26,7 +26,7 @@ class Log {
           stdout.writeln(mesg);
         }
       } else {
-        developer.log(mesg, level: rec.level.value, error: rec.error);
+        developer.log(mesg, level: rec.level.value, error: rec.error, stackTrace: rec.stackTrace);
       }
     });
   }
